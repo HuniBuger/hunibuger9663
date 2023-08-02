@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 import datetime
 
@@ -52,5 +53,5 @@ async def clear19721121(ctx):
         await ctx.send("모든 딕셔너리를 초기화했습니다. / All dictionaries have been cleared.")
     else:
         await ctx.send("권한이 없습니다. / You don't have the permission to do this.")
-
-bot.run("MTEzNjIxOTM3MzM0NzAyOTAzMg.GrrArB.-rC3hTNW8ulNt6bFx2NKPul3Uebqea24Q-1uto")
+access_token = os.environ["BOT_TOKEN"] 
+bot.run("access_token")
